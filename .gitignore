@@ -1,0 +1,33 @@
+# Java/Maven
+target/
+*.jar
+*.war
+*.ear
+*.class
+.mvn/
+mvnw
+mvnw.cmd
+.idea/
+*.iml
+
+# Node.js
+node_modules/
+.pnp
+.pnp.js
+.yarn/install-state.gz
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.yarn/berry
+dist/
+build/
+
+# Logs y temporales
+*.log
+*.tmp
+*.swp
+
+# Entornos
+.env
+.DS_Store
