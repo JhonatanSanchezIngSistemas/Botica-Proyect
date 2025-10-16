@@ -9,8 +9,8 @@
 - [x] Crear repository ProductoRepository
 - [x] Crear service ProductoService
 - [x] Crear controller ProductoController con endpoints CRUD
-- [ ] Configurar seguridad JWT (entidad Usuario, roles)
-- [ ] Implementar autenticación y autorización
+- [x] Configurar seguridad JWT (entidad Usuario, roles)
+- [x] Implementar autenticación y autorización
 - [ ] Agregar validaciones y excepciones
 - [ ] Probar backend con Postman
 
@@ -29,3 +29,12 @@
 - [ ] Ejecutar backend y frontend
 - [ ] Revisar código y aplicar principios SOLID
 - [ ] Documentar y explicar código final
+
+## Avance 02 - Trabajo colaborativo
+- [x] Evolución funcional: Implementar autenticación JWT
+- [x] Trabajo colaborativo: Rama feature/seguridad-jwt
+- [x] Simulación de conflicto de merge: Documentado (no ocurrió)
+- [x] Release v1.0: Tag creado y subido
+- [x] Herramientas de colaboración: Git/GitHub
+- [x] Gestión de actividades: TODO.md
+- [x] Documentación en README.md
