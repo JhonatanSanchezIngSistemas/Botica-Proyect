@@ -21,16 +21,3 @@ CREATE TABLE IF NOT EXISTS productos (
     stock SMALLINT NOT NULL,
     categoria VARCHAR(50) NOT NULL
 );
-
--- Insertar datos de prueba para usuarios (contraseñas hasheadas con BCrypt)
-INSERT INTO usuarios (username, password, role) VALUES
-('admin', '$2a$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'ADMIN'),
-('user', '$2a$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'USER');
-
--- Insertar datos de prueba para productos
-INSERT INTO productos (nombre, descripcion, precio, stock, categoria) VALUES
-('Paracetamol 500mg', 'Analgésico y antipirético', 5.50, 100, 'Analgésicos'),
-('Ibuprofeno 400mg', 'Antiinflamatorio no esteroideo', 8.75, 80, 'Antiinflamatorios'),
-('Amoxicilina 500mg', 'Antibiótico de amplio espectro', 12.00, 50, 'Antibióticos'),
-('Vitamina C 1000mg', 'Suplemento vitamínico', 15.25, 120, 'Vitaminas'),
-('Jarabe para la tos', 'Expectorante y antitusivo', 9.90, 60, 'Respiratorios');

@@ -13,16 +13,16 @@
 - [x] Integrar API en frontend
 
 ## Mejoras Críticas (Prioridad Alta)
-- [ ] Fortalecer secreto JWT: Generar clave fuerte y aleatoria, cargar desde variable de entorno
-- [ ] Configurar CORS correctamente: Eliminar cors().disable(), configurar orígenes permitidos
-- [ ] Usar enum para roles: Crear Role.java, modificar Usuario.java y servicios relacionados
-- [ ] Usar BigDecimal para precios: Cambiar Double a BigDecimal en Producto.java, ajustar servicios y controlador
-- [ ] Mejorar manejo de errores: Reemplazar printStackTrace con logger, mensajes seguros para cliente
-- [ ] Actualizar JJWT a versión 0.12.5 en pom.xml
+- [x] Fortalecer secreto JWT: Generar clave fuerte y aleatoria, cargar desde variable de entorno
+- [x] Configurar CORS correctamente: Eliminar cors().disable(), configurar orígenes permitidos
+- [x] Usar enum para roles: Crear Role.java, modificar Usuario.java y servicios relacionados
+- [x] Usar BigDecimal para precios: Cambiar Double a BigDecimal en Producto.java, ajustar servicios y controlador
+- [x] Mejorar manejo de errores: Reemplazar printStackTrace con logger, mensajes seguros para cliente
+- [x] Actualizar JJWT a versión 0.12.5 en pom.xml
 
 ## Funcionalidad Básica
-- [ ] Asegurar login funcional: Después de login, redirigir a dashboard y mostrar JWT
-- [ ] Probar integración backend-frontend
+- [x] Asegurar login funcional: Después de login, redirigir a dashboard y mostrar JWT
+- [x] Probar integración backend-frontend
 
 ## Mejoras de Código (Prioridad Media)
 - [ ] Introducir DTOs: Crear RegisterRequest, LoginRequest, ProductoRequest, AuthResponse, ProductoResponse
