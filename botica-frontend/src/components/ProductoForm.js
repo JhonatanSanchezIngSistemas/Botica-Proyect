@@ -59,7 +59,6 @@ const ProductoForm = ({ onProductoAdded }) => {
             name="descripcion"
             value={producto.descripcion}
             onChange={handleChange}
-            required
           />
         </div>
         <div>

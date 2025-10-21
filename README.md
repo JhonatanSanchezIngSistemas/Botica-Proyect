@@ -13,6 +13,30 @@ Sistema de gestión de botica con React (frontend) y Spring Boot (backend).
 - Backend: JDK 21, Spring Boot, MySQL, Hibernate, Lombok, Spring Security.
 - Frontend: React, Axios para APIs.
 
+## AVANCE 02: Mejoras de Seguridad y Preparación para Colaboración
+
+### Mejoras Implementadas
+- **JWT Secret Mejorado**: Se cambió el secret por defecto a uno más seguro.
+- **Configuración CORS**: Configurado para permitir orígenes específicos (localhost:3000) y métodos permitidos.
+- **Enum Role**: Uso de enum Role para roles (ADMIN, USER) en lugar de strings.
+- **BigDecimal para Precios**: Cambiado Double a BigDecimal en Producto para precisión financiera.
+- **Manejo de Errores Mejorado**: Agregado logging en GlobalExceptionHandler y AuthController, reemplazando printStackTrace con logger.error.
+- **JWT Actualizado**: Actualizado a JJWT 0.12.5 para compatibilidad y seguridad.
+- **Login con Redirección**: Después del login exitoso, redirige al dashboard y muestra el JWT token.
+- **Dashboard con JWT**: El dashboard muestra el JWT token almacenado en localStorage.
+
+### Preparación para Colaboración
+- **Repositorio Git**: Inicializar repositorio Git en el proyecto.
+- **Ramas**: Crear ramas para desarrollo (e.g., feature/login-improvements).
+- **Pull Requests**: Simular PRs para revisión de código.
+- **Conflictos de Merge**: Resolver conflictos de merge simulados.
+- **Release v1.0**: Crear release v1.0 con tag y documentación.
+
+### Evidencias
+- [Enlace a GitHub Repo](https://github.com/usuario/botica-proyecto)
+- [PRs](https://github.com/usuario/botica-proyecto/pulls)
+- [Release v1.0](https://github.com/usuario/botica-proyecto/releases/tag/v1.0)
+
 ## Avance 02 - Trabajo colaborativo con control de versiones
 
 ### Evolución funcional

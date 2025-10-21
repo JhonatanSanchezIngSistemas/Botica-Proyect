@@ -1,40 +1,49 @@
-# Lista de Tareas - Proyecto Botica
+# TODO - Proyecto Botica
 
-## Backend (Spring Boot)
-- [x] Crear pom.xml con dependencias (Spring Boot, JPA, MySQL, Security, JWT, Lombok)
-- [x] Crear estructura de directorios (controller, service, entity, repository, config, security, resources)
-- [x] Crear aplicación principal (BoticaApplication.java)
-- [x] Configurar application.properties (BD MySQL, JPA, JWT)
-- [x] Crear entidad Producto con Lombok
-- [x] Crear repository ProductoRepository
-- [x] Crear service ProductoService
-- [x] Crear controller ProductoController con endpoints CRUD
-- [x] Configurar seguridad JWT (entidad Usuario, roles)
-- [x] Implementar autenticación y autorización
-- [ ] Agregar validaciones y excepciones
-- [ ] Probar backend con Postman
+## Tareas Completadas
+- [x] Inicializar backend con Spring Boot y dependencias
+- [x] Crear estructura de paquetes (controller, service, entity, repository, config, security)
+- [x] Implementar entidades Usuario y Producto
+- [x] Implementar repositorios
+- [x] Implementar servicios
+- [x] Implementar controladores con endpoints REST
+- [x] Configurar seguridad JWT con roles
+- [x] Inicializar frontend React con Axios
+- [x] Crear componentes básicos (LoginForm, Dashboard, ProductoList, ProductoForm)
+- [x] Integrar API en frontend
 
-## Frontend (React)
-- [x] Inicializar app React con create-react-app
-- [x] Instalar Axios para llamadas API
-- [x] Crear componente ProductoList para mostrar productos
-- [x] Crear componente ProductoForm para agregar/editar productos
-- [x] Crear servicio API para consumir backend
-- [x] Integrar componentes en App.js
-- [x] Agregar estilos básicos
-- [ ] Probar integración con backend
+## Mejoras Críticas (Prioridad Alta)
+- [ ] Fortalecer secreto JWT: Generar clave fuerte y aleatoria, cargar desde variable de entorno
+- [ ] Configurar CORS correctamente: Eliminar cors().disable(), configurar orígenes permitidos
+- [ ] Usar enum para roles: Crear Role.java, modificar Usuario.java y servicios relacionados
+- [ ] Usar BigDecimal para precios: Cambiar Double a BigDecimal en Producto.java, ajustar servicios y controlador
+- [ ] Mejorar manejo de errores: Reemplazar printStackTrace con logger, mensajes seguros para cliente
+- [ ] Actualizar JJWT a versión 0.12.5 en pom.xml
 
-## General
-- [ ] Configurar base de datos MySQL local
-- [ ] Ejecutar backend y frontend
-- [ ] Revisar código y aplicar principios SOLID
-- [ ] Documentar y explicar código final
+## Funcionalidad Básica
+- [ ] Asegurar login funcional: Después de login, redirigir a dashboard y mostrar JWT
+- [ ] Probar integración backend-frontend
 
-## Avance 02 - Trabajo colaborativo
-- [x] Evolución funcional: Implementar autenticación JWT
-- [x] Trabajo colaborativo: Rama feature/seguridad-jwt
-- [x] Simulación de conflicto de merge: Documentado (no ocurrió)
-- [x] Release v1.0: Tag creado y subido
-- [x] Herramientas de colaboración: Git/GitHub
-- [x] Gestión de actividades: TODO.md
-- [x] Documentación en README.md
+## Mejoras de Código (Prioridad Media)
+- [ ] Introducir DTOs: Crear RegisterRequest, LoginRequest, ProductoRequest, AuthResponse, ProductoResponse
+- [ ] Modificar controladores para usar DTOs
+
+## Expansión (Prioridad Baja)
+- [ ] Implementar pruebas unitarias
+- [ ] Paginación y filtrado para productos
+- [ ] Gestión de usuarios CRUD para ADMIN
+- [ ] Documentación API con Swagger
+- [ ] Contenedorización con Docker
+
+## Preparación AVANCE 02
+- [ ] Eliminar carpeta OnceSports-main (temporal)
+- [ ] Inicializar repositorio Git
+- [ ] Crear ramas individuales para features
+- [ ] Simular commits descriptivos
+- [ ] Crear Pull Requests simulados con revisiones
+- [ ] Simular y resolver conflicto de merge
+- [ ] Crear flujo de release (tag v1.0 con changelog)
+- [ ] Configurar herramientas de colaboración (ej. GitHub Discussions)
+- [ ] Configurar herramienta de gestión de actividades (ej. GitHub Projects o Trello)
+- [ ] Actualizar README.md con evidencias (capturas, enlaces, etc.)
+- [ ] Documentar proceso en README.md

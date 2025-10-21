@@ -2,6 +2,7 @@ package com.botica.controller;
 
 import com.botica.entity.Producto;
 import com.botica.service.ProductoService;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
@@ -33,18 +34,20 @@ public class ProductoController {
 
     @PostMapping
     @PreAuthorize("hasRole('ADMIN')")
-    public Producto crear(@RequestBody Producto producto) {
-        return productoService.guardar(producto);
+    public ResponseEntity<Producto> crear(@Valid @RequestBody Producto producto) {
+        Producto savedProducto = productoService.guardar(producto);
+        return ResponseEntity.ok(savedProducto);
     }
 
     @PutMapping("/{id}")
     @PreAuthorize("hasRole('ADMIN')")
-    public ResponseEntity<Producto> actualizar(@PathVariable Long id, @RequestBody Producto producto) {
+    public ResponseEntity<Producto> actualizar(@PathVariable Long id, @Valid @RequestBody Producto producto) {
         if (!productoService.obtenerPorId(id).isPresent()) {
             return ResponseEntity.notFound().build();
         }
         producto.setId(id);
-        return ResponseEntity.ok(productoService.guardar(producto));
+        Producto updatedProducto = productoService.guardar(producto);
+        return ResponseEntity.ok(updatedProducto);
     }
 
     @DeleteMapping("/{id}")
