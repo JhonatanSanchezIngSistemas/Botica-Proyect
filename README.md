@@ -1,4 +1,4 @@
-# Botica-Proyect
+Proyecto Botica - versión feature (cambio conflictivo en FEATURE)
 Sistema de gestiÃ³n de botica con React (frontend) y Spring Boot (backend).
 
 ## Estructura
