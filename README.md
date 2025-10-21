@@ -1,4 +1,4 @@
-# Botica-Proyect
+Proyecto Botica - versión principal (cambio conflictivo en MAIN)
 Sistema de gestiÃ³n de botica con React (frontend) y Spring Boot (backend).
 
 ## Estructura
