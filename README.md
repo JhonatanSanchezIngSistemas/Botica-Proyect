@@ -72,3 +72,12 @@ Sistema de gestiÃ³n de botica con React (frontend) y Spring Boot (backend).
 - Release: https://github.com/JhonatanSanchezIngSistemas/Botica-Proyect/releases/tag/v1.0
 - Tablero de tareas: TODO.md en el repositorio
 
+
+## Release JWT v1.2
+- Tag: v1.2-JWT
+- Rama: release/JWT-v1.2
+- Cambios: correcciones en JwtUtil, JwtAuthenticationFilter, SecurityConfig y UI de registro.
+- PR: (placeholder para enlace a Pull Request)
+- Evidencia de resolución de conflicto: (placeholder)
+- Tablero de tareas: (placeholder enlace a Trello/Jira)
+
