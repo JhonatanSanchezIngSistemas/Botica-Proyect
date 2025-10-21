@@ -1,4 +1,8 @@
+Proyecto Botica - resoluciÛn de conflicto: se conservaron cambios de MAIN y FEATURE.\r\n\r\n<<<<<<< HEAD
 Proyecto Botica - versiÛn feature (cambio conflictivo en FEATURE)
+=======
+Proyecto Botica - versiÛn principal (cambio conflictivo en MAIN)
+>>>>>>> main
 Sistema de gesti√≥n de botica con React (frontend) y Spring Boot (backend).
 
 ## Estructura
@@ -67,3 +71,4 @@ Sistema de gesti√≥n de botica con React (frontend) y Spring Boot (backend).
 - Pull Request: https://github.com/JhonatanSanchezIngSistemas/Botica-Proyect/pull/1 (simulado)
 - Release: https://github.com/JhonatanSanchezIngSistemas/Botica-Proyect/releases/tag/v1.0
 - Tablero de tareas: TODO.md en el repositorio
+
