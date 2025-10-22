@@ -42,7 +42,7 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
         if (username != null && SecurityContextHolder.getContext().getAuthentication() == null) {
             if (jwtUtil.validateToken(jwt, username)) {
                 UsernamePasswordAuthenticationToken authenticationToken = new UsernamePasswordAuthenticationToken( // Usar role.name()
-                        username, null, Collections.singletonList(new SimpleGrantedAuthority("ROLE_" + role.name())));
+                        username, null, Collections.singletonList(new SimpleGrantedAuthority("ROLE_" + (role != null ? role.name() : "USER"))));
                 authenticationToken.setDetails(new WebAuthenticationDetailsSource().buildDetails(request));
                 SecurityContextHolder.getContext().setAuthentication(authenticationToken);
             }

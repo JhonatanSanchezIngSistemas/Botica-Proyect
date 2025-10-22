@@ -42,6 +42,7 @@ public class SecurityConfig {
         return http.build();
     }
 
+    @SuppressWarnings("deprecation")
     @Bean
     public AuthenticationManager authenticationManager(@Autowired UserDetailsService userDetailsService, @Autowired PasswordEncoder passwordEncoder) throws Exception {
         DaoAuthenticationProvider authProvider = new DaoAuthenticationProvider();
