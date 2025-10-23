@@ -1,4 +1,4 @@
-Proyecto Botica - versi�n principal (cambio conflictivo en MAIN)
+Proyecto Botica - versi�n principal (cambio conflictivo en MAIN)
 Sistema de gestión de botica con React (frontend) y Spring Boot (backend).
 
 ## Estructura
@@ -67,3 +67,4 @@ Sistema de gestión de botica con React (frontend) y Spring Boot (backend).
 - Pull Request: https://github.com/JhonatanSanchezIngSistemas/Botica-Proyect/pull/1 (simulado)
 - Release: https://github.com/JhonatanSanchezIngSistemas/Botica-Proyect/releases/tag/v1.0
 - Tablero de tareas: TODO.md en el repositorio
+a
