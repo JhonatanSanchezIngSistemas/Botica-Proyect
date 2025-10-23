@@ -1,0 +1,258 @@
+
+/* Variables CSS para Glassmorphism */
+:root {
+    --color-principal: #2a61a0;
+    --color-secundario: #1e4b7b;
+    --color-terciario: #0f3460;
+    --color-texto-blanco: #ffffff;
+    --color-texto-gris: #cccccc;
+    --color-error: #ff6b6b;
+}
+
+/* Reset básico */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Contenedor principal con fondo degradado */
+.login-glassmorphism {
+    min-height: 100vh;
+    background: linear-gradient(135deg, var(--color-terciario) 0%, var(--color-secundario) 50%, var(--color-principal) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Tarjeta Glassmorphism */
+.login-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding: 50px 60px;
+    width: 100%;
+    max-width: 450px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Efecto de brillo en la tarjeta */
+.login-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+}
+
+/* Sección del logo */
+.logo-section {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.app-logo {
+    width: 100px;
+    height: auto;
+    margin-bottom: 15px;
+    filter: brightness(1.1);
+}
+
+.logo-section h1 {
+    color: var(--color-texto-blanco);
+    font-size: 1.8em;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.logo-section p {
+    color: var(--color-texto-gris);
+    font-size: 0.9em;
+    opacity: 0.8;
+}
+
+
+.form-group {
+    position: relative;
+    margin-bottom: 35px; /* Aumentado para dar espacio al link de contraseña */
+}
+
+/* Estilo específico para el último form-group antes del botón */
+.form-group:last-of-type {
+    margin-bottom: 25px;
+}
+
+.input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-icon {
+    position: absolute;
+    left: 0;
+    color: var(--color-texto-blanco);
+    font-size: 1.2em;
+    z-index: 1;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px 0;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 0;
+    color: var(--color-texto-blanco);
+    font-size: 1em;
+    transition: all 0.3s ease;
+}
+
+.form-group input::placeholder {
+    color: var(--color-texto-blanco);
+    opacity: 0.7;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-bottom-color: var(--color-texto-blanco);
+}
+
+/* Botón de login */
+.btn-login {
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(135deg, #3672b3 0%, #2a61a0 100%);
+    border: none;
+    border-radius: 12px;
+    color: var(--color-texto-blanco);
+    font-size: 1.1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.btn-login:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(42, 97, 160, 0.5);
+}
+
+.btn-login:disabled {
+    background: rgba(255, 255, 255, 0.2);
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+/* Links */
+.form-links {
+    /* Este contenedor ya no es necesario para los links dentro de la tarjeta */
+    /* Se puede reutilizar para el link de registro fuera de la tarjeta */
+    text-align: center;
+}
+
+.forgot-link {
+    color: var(--color-texto-gris);
+    position: absolute;
+    right: 0;
+    bottom: -22px; /* Posicionado justo debajo del campo de contraseña */
+    text-decoration: none;
+    font-size: 0.9em;
+    transition: color 0.3s ease;
+}
+
+.forgot-link:hover, .register-link:hover {
+    color: var(--color-texto-blanco);
+    text-decoration: underline;
+}
+
+/* Link de registro, ahora fuera de la tarjeta principal */
+.register-link-wrapper {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.register-link {
+    color: var(--color-texto-gris);
+    text-decoration: none;
+    font-size: 0.95em;
+    transition: color 0.3s ease;
+}
+
+.register-link:hover {
+    color: var(--color-texto-blanco);
+    text-decoration: underline;
+}
+
+/* Mensaje de error */
+.error-message {
+    color: var(--color-error);
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 0.9em;
+    background: rgba(255, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 0, 0, 0.2);
+}
+
+/* Responsividad */
+@media (max-width: 480px) {
+    .login-glassmorphism {
+        padding: 10px;
+    }
+
+    .login-card {
+        padding: 40px 25px;
+        border-radius: 20px;
+    }
+
+    .logo-section h1 {
+        font-size: 1.5em;
+    }
+
+    .app-logo {
+        width: 80px;
+    }
+
+    .form-group input {
+        padding: 12px 12px 12px 45px;
+        font-size: 0.95em;
+    }
+
+    .input-icon {
+        left: 12px;
+        font-size: 1.1em;
+    }
+
+    .btn-login {
+        padding: 12px;
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 360px) {
+    .login-card {
+        padding: 25px 20px;
+    }
+
+    .logo-section {
+        margin-bottom: 20px;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+}
